@@ -1,0 +1,26 @@
+
+# Question - 07 : Chad
+
+Chad = df[df.Location == 'Chad']
+print(Chad[1:])
+
+===============================================================================
+
+    Location  Period                               Indicator First Tooltip
+428     Chad  2010.0  Number of reported deaths from cholera           175
+429     Chad  2009.0  Number of reported deaths from cholera             6
+430     Chad  2007.0  Number of reported deaths from cholera             0
+431     Chad  2006.0  Number of reported deaths from cholera            71
+432     Chad  2005.0  Number of reported deaths from cholera            14
+433     Chad  2004.0  Number of reported deaths from cholera           272
+434     Chad  2003.0  Number of reported deaths from cholera             7
+435     Chad  2001.0  Number of reported deaths from cholera           226
+436     Chad  1999.0  Number of reported deaths from cholera            18
+437     Chad  1998.0  Number of reported deaths from cholera           144
+438     Chad  1997.0  Number of reported deaths from cholera           443
+439     Chad  1996.0  Number of reported deaths from cholera           448
+440     Chad  1994.0  Number of reported deaths from cholera            43
+441     Chad  1991.0  Number of reported deaths from cholera          1344
+442     Chad  1974.0  Number of reported deaths from cholera            87
+443     Chad  1972.0  Number of reported deaths from cholera             3
+444     Chad  1971.0  Number of reported deaths from cholera          2411
