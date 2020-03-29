@@ -1,0 +1,12 @@
+# Question - 12 : United Arab Emirates
+
+UAE = df[df.Location == 'United Arab Emirates']
+print(UAE[1:])
+
+=======================================================
+
+Empty DataFrame
+Columns: [Location, Period, Indicator, First Tooltip]
+Index: []
+
+In [23]:
