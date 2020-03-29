@@ -1,0 +1,45 @@
+# Question - 11 : Thailand
+
+Thailand = df[df.Location == 'Thailand']
+print(Thailand[1:])
+=================================================================================
+
+      Location  Period                               Indicator First Tooltip
+2045  Thailand  2015.0  Number of reported deaths from cholera             1
+2046  Thailand  2014.0  Number of reported deaths from cholera             0
+2047  Thailand  2013.0  Number of reported deaths from cholera             0
+2048  Thailand  2012.0  Number of reported deaths from cholera             0
+2049  Thailand  2011.0  Number of reported deaths from cholera             4
+2050  Thailand  2010.0  Number of reported deaths from cholera            15
+2051  Thailand  2009.0  Number of reported deaths from cholera             2
+2052  Thailand  2008.0  Number of reported deaths from cholera             3
+2053  Thailand  2007.0  Number of reported deaths from cholera             7
+2054  Thailand  2006.0  Number of reported deaths from cholera             0
+2055  Thailand  1994.0  Number of reported deaths from cholera             5
+2056  Thailand  1988.0  Number of reported deaths from cholera            41
+2057  Thailand  1987.0  Number of reported deaths from cholera            36
+2058  Thailand  1986.0  Number of reported deaths from cholera             1
+2059  Thailand  1985.0  Number of reported deaths from cholera            14
+2060  Thailand  1984.0  Number of reported deaths from cholera            19
+2061  Thailand  1983.0  Number of reported deaths from cholera            41
+2062  Thailand  1982.0  Number of reported deaths from cholera            16
+2063  Thailand  1981.0  Number of reported deaths from cholera             2
+2064  Thailand  1980.0  Number of reported deaths from cholera            85
+2065  Thailand  1979.0  Number of reported deaths from cholera            44
+2066  Thailand  1978.0  Number of reported deaths from cholera           123
+2067  Thailand  1977.0  Number of reported deaths from cholera             5
+2068  Thailand  1976.0  Number of reported deaths from cholera             0
+2069  Thailand  1975.0  Number of reported deaths from cholera            88
+2070  Thailand  1974.0  Number of reported deaths from cholera            64
+2071  Thailand  1973.0  Number of reported deaths from cholera            33
+2072  Thailand  1969.0  Number of reported deaths from cholera            40
+2073  Thailand  1968.0  Number of reported deaths from cholera            21
+2074  Thailand  1967.0  Number of reported deaths from cholera             6
+2075  Thailand  1966.0  Number of reported deaths from cholera            21
+2076  Thailand  1965.0  Number of reported deaths from cholera             4
+2077  Thailand  1964.0  Number of reported deaths from cholera            30
+2078  Thailand  1963.0  Number of reported deaths from cholera           156
+2079  Thailand  1959.0  Number of reported deaths from cholera           613
+2080  Thailand  1958.0  Number of reported deaths from cholera          1426
+2081  Thailand  1951.0  Number of reported deaths from cholera             0
+2082  Thailand  1949.0  Number of reported deaths from cholera             2
