@@ -1,0 +1,15 @@
+
+# Question - 03 : Argentina 
+
+Argentina  = df[df.Location == 'Argentina']
+print(Argentina[1:])
+
+=============================================================================
+
+     Location  Period                               Indicator First Tooltip
+69  Argentina  1997.0  Number of reported deaths from cholera            12
+70  Argentina  1996.0  Number of reported deaths from cholera             5
+71  Argentina  1995.0  Number of reported deaths from cholera             1
+72  Argentina  1994.0  Number of reported deaths from cholera            15
+73  Argentina  1993.0  Number of reported deaths from cholera            34
+74  Argentina  1992.0  Number of reported deaths from cholera            15
