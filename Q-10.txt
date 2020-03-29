@@ -1,0 +1,46 @@
+# Question - 10 : Indonesia
+
+Indonesia = df[df.Location == 'Indonesia']
+print(Indonesia[1:])
+
+==============================================================================
+
+      Location  Period                               Indicator First Tooltip
+941  Indonesia  2005.0  Number of reported deaths from cholera            19
+942  Indonesia  2001.0  Number of reported deaths from cholera             6
+943  Indonesia  1997.0  Number of reported deaths from cholera             0
+944  Indonesia  1996.0  Number of reported deaths from cholera             0
+945  Indonesia  1994.0  Number of reported deaths from cholera             0
+946  Indonesia  1993.0  Number of reported deaths from cholera            25
+947  Indonesia  1992.0  Number of reported deaths from cholera             0
+948  Indonesia  1991.0  Number of reported deaths from cholera            55
+949  Indonesia  1990.0  Number of reported deaths from cholera             0
+950  Indonesia  1989.0  Number of reported deaths from cholera             0
+951  Indonesia  1988.0  Number of reported deaths from cholera             0
+952  Indonesia  1987.0  Number of reported deaths from cholera            18
+953  Indonesia  1986.0  Number of reported deaths from cholera           391
+954  Indonesia  1985.0  Number of reported deaths from cholera            85
+955  Indonesia  1984.0  Number of reported deaths from cholera            59
+956  Indonesia  1983.0  Number of reported deaths from cholera           346
+957  Indonesia  1982.0  Number of reported deaths from cholera           535
+958  Indonesia  1981.0  Number of reported deaths from cholera           463
+959  Indonesia  1980.0  Number of reported deaths from cholera           150
+960  Indonesia  1979.0  Number of reported deaths from cholera           769
+961  Indonesia  1978.0  Number of reported deaths from cholera           507
+962  Indonesia  1977.0  Number of reported deaths from cholera           780
+963  Indonesia  1976.0  Number of reported deaths from cholera          2665
+964  Indonesia  1975.0  Number of reported deaths from cholera          3715
+965  Indonesia  1974.0  Number of reported deaths from cholera          3920
+966  Indonesia  1973.0  Number of reported deaths from cholera          3058
+967  Indonesia  1972.0  Number of reported deaths from cholera          6956
+968  Indonesia  1971.0  Number of reported deaths from cholera          3607
+969  Indonesia  1970.0  Number of reported deaths from cholera          1257
+970  Indonesia  1969.0  Number of reported deaths from cholera           262
+971  Indonesia  1968.0  Number of reported deaths from cholera            22
+972  Indonesia  1967.0  Number of reported deaths from cholera           139
+973  Indonesia  1966.0  Number of reported deaths from cholera            36
+974  Indonesia  1964.0  Number of reported deaths from cholera            69
+975  Indonesia  1963.0  Number of reported deaths from cholera            83
+976  Indonesia  1962.0  Number of reported deaths from cholera            80
+977  Indonesia  1961.0  Number of reported deaths from cholera           474
+978  Indonesia  1960.0  Number of reported deaths from cholera            22
