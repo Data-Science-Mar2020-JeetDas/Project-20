@@ -1,0 +1,46 @@
+# Question - 09 : India
+
+India = df[df.Location == 'India']
+print(India[1:])
+
+=======================================================================================
+
+    Location  Period                               Indicator First Tooltip
+881    India  2015.0  Number of reported deaths from cholera             4
+882    India  2014.0  Number of reported deaths from cholera            21
+883    India  2013.0  Number of reported deaths from cholera            54
+884    India  2010.0  Number of reported deaths from cholera             9
+885    India  2008.0  Number of reported deaths from cholera             1
+886    India  2007.0  Number of reported deaths from cholera             3
+887    India  2006.0  Number of reported deaths from cholera             3
+888    India  2005.0  Number of reported deaths from cholera             6
+889    India  2004.0  Number of reported deaths from cholera             7
+890    India  2003.0  Number of reported deaths from cholera             2
+891    India  2002.0  Number of reported deaths from cholera            10
+892    India  2001.0  Number of reported deaths from cholera             6
+893    India  2000.0  Number of reported deaths from cholera            20
+894    India  1999.0  Number of reported deaths from cholera             6
+895    India  1998.0  Number of reported deaths from cholera            11
+896    India  1997.0  Number of reported deaths from cholera            16
+897    India  1996.0  Number of reported deaths from cholera            34
+898    India  1995.0  Number of reported deaths from cholera             5
+899    India  1994.0  Number of reported deaths from cholera            32
+900    India  1993.0  Number of reported deaths from cholera            51
+901    India  1992.0  Number of reported deaths from cholera            55
+902    India  1991.0  Number of reported deaths from cholera           149
+903    India  1990.0  Number of reported deaths from cholera            83
+904    India  1989.0  Number of reported deaths from cholera            93
+905    India  1988.0  Number of reported deaths from cholera           380
+906    India  1987.0  Number of reported deaths from cholera           240
+907    India  1986.0  Number of reported deaths from cholera            70
+908    India  1985.0  Number of reported deaths from cholera           155
+909    India  1984.0  Number of reported deaths from cholera            27
+910    India  1983.0  Number of reported deaths from cholera           309
+911    India  1982.0  Number of reported deaths from cholera           213
+912    India  1981.0  Number of reported deaths from cholera           150
+913    India  1980.0  Number of reported deaths from cholera           307
+914    India  1979.0  Number of reported deaths from cholera           113
+915    India  1978.0  Number of reported deaths from cholera           246
+916    India  1977.0  Number of reported deaths from cholera           289
+917    India  1976.0  Number of reported deaths from cholera           662
+918    India  1975.0  Number of reported deaths from cholera          2330
