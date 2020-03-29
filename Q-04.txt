@@ -1,0 +1,10 @@
+# Question - 04 : Armenia 
+
+Armenia = df[df.Location == 'Armenia']
+print(Armenia[1:])
+
+====================================================
+
+Empty DataFrame
+Columns: [Location, Period, Indicator, First Tooltip]
+Index: []
