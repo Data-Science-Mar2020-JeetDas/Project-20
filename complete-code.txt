@@ -1,0 +1,568 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import pandas
+
+
+df = pd.read_csv("C:/Users/Jeet Das/Desktop/cholera-data.csv",encoding="utf-8")
+
+print("\n----------------------- output data :---------------------\n")
+print("Project-20 : Country wise Number of reported deaths from cholera");
+print("\n------------------------------------------------------------\n")
+
+
+# Question – A : get row and column numbers 
+
+print('---------------------------------------------')
+print("Dimension of the data frame = ",df.shape)
+print('---------------------------------------------')
+
+# Question – B : print column names :
+
+print('------------------------\n Column names as follows :')
+print('------------------------\n')
+count = 0
+for col in df.columns: 
+        print(count,"-->",col)
+        count = count+1
+print("\n-----------------------------\n")
+
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+
+
+# Question - D : Available years data for which data is available
+
+years = df.groupby(['Period'])[['Location']].count()
+print("---------------------------------")
+print("\tAvailable years data : ")
+print("-------------------------------")
+print(years)
+print("-------------------------------")
+count = 0
+for row in range(len(years)): 
+        count = count+1
+print("total no. of years = ",count)        
+print("-----------------------------\n")
+
+
+# Question - 01 : Afghanistan
+
+Afghanistan = df[df.Location == 'Afghanistan']
+print(Afghanistan[1:])
+
+# Question - 02 : Algeria  
+
+Algeria  = df[df.Location == 'Algeria']
+print(Algeria[1:])                                                                         
+
+# Question - 03 : Argentina 
+
+Argentina  = df[df.Location == 'Argentina']
+print(Argentina[1:])                                  
+
+# Question - 04 : Armenia 
+
+Armenia = df[df.Location == 'Armenia']
+print(Armenia[1:])
+
+# Question - 05 : Bangladesh
+
+Bangladesh = df[df.Location == 'Bangladesh']
+print(Bangladesh[1:])
+
+# Question - 06 : Central African Republic
+
+Central_African_Republic = df[df.Location == 'Central African Republic']
+print(Central_African_Republic[1:])
+
+# Question - 07 : Chad
+
+Chad = df[df.Location == 'Chad']
+print(Chad[1:])
+
+# Question - 08 : China
+
+China = df[df.Location == 'China']
+print(China[1:])
+
+# Question - 09 : India
+
+India = df[df.Location == 'India']
+print(India[1:])
+
+# Question - 10 : Indonesia
+
+Indonesia = df[df.Location == 'Indonesia']
+print(Indonesia[1:])
+
+# Question - 11 : Thailand
+
+Thailand = df[df.Location == 'Thailand']
+print(Thailand[1:])
+
+# Question - 12 : United Arab Emirates
+
+UAE = df[df.Location == 'United Arab Emirates']
+print(UAE[1:])
+
+
+----------------------- output data :---------------------
+
+Project-20 : Country wise Number of reported deaths from cholera
+
+------------------------------------------------------------
+
+---------------------------------------------
+Dimension of the data frame =  (2376, 4)
+---------------------------------------------
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> Location
+1 --> Period
+2 --> Indicator
+3 --> First Tooltip
+
+-----------------------------
+
+---------------------------------
+        Available country names : 
+-------------------------------
+                                                    Period
+Location                                                  
+Afghanistan                                             21
+Albania                                                  1
+Algeria                                                 20
+Andorra                                                  1
+Angola                                                  25
+Argentina                                                7
+Armenia                                                  1
+Australia                                               31
+Austria                                                  7
+Azerbaijan                                               1
+Bahamas                                                  1
+Bahrain                                                  6
+Bangladesh                                              44
+Belarus                                                  2
+Belgium                                                  9
+Belize                                                   8
+Benin                                                   39
+Bhutan                                                   5
+Bolivia (Plurinational State of)                         8
+Botswana                                                 4
+Brazil                                                  14
+Brunei Darussalam                                        5
+Burkina Faso                                            21
+Burundi                                                 31
+Cabo Verde                                               9
+Cambodia                                                32
+Cameroon                                                44
+Canada                                                  22
+Central African Republic                                 7
+Chad                                                    18
+                                                   ...
+South Viet Nam (former)                                 18
+Spain                                                   17
+Sri Lanka                                               20
+State Union of Serbia and Montenegro (1993-2002)         4
+Sudan (until 2011)                                       8
+Suriname                                                 1
+Sweden                                                  16
+Switzerland                                             10
+Syrian Arab Republic                                     7
+Tajikistan                                               2
+Thailand                                                39
+Togo                                                    32
+Tonga                                                    1
+Tunisia                                                  3
+Turkey                                                   2
+Turkmenistan                                             4
+Tuvalu                                                   2
+Uganda                                                  31
+Ukraine                                                  6
+United Arab Emirates                                     1
+United Kingdom of Great Britain and Northern Ir...      38
+United Republic of Tanzania                             40
+United States of America                                26
+Uzbekistan                                               1
+Venezuela (Bolivarian Republic of)                      10
+Viet Nam                                                28
+Yemen                                                    5
+Yemen Arab Republic (until 1990)                         8
+Zambia                                                  28
+Zimbabwe                                                23
+
+[165 rows x 1 columns]
+-------------------------------
+total no. of country =  165
+-----------------------------
+
+---------------------------------
+        Available years data : 
+-------------------------------
+        Location
+Period          
+1949.0         2
+1950.0         5
+1951.0         6
+1952.0         5
+1953.0         6
+1954.0         6
+1955.0         4
+1956.0         4
+1957.0         4
+1958.0         8
+1959.0         4
+1960.0         5
+1961.0         5
+1962.0         7
+1963.0        12
+1964.0        12
+1965.0        12
+1966.0        11
+1967.0         8
+1968.0        11
+1969.0        12
+1970.0        38
+1971.0        41
+1972.0        37
+1973.0        34
+1974.0        35
+1975.0        36
+1976.0        37
+1977.0        40
+1978.0        42
+         ...
+1987.0        36
+1988.0        32
+1989.0        34
+1990.0        37
+1991.0        58
+1992.0        65
+1993.0        76
+1994.0        89
+1995.0        77
+1996.0        70
+1997.0        64
+1998.0        68
+1999.0        61
+2000.0        52
+2001.0        44
+2002.0        33
+2003.0        35
+2004.0        55
+2005.0        70
+2006.0        66
+2007.0        58
+2008.0        59
+2009.0        45
+2010.0        47
+2011.0        45
+2012.0        48
+2013.0        47
+2014.0        40
+2015.0        40
+2016.0        37
+
+[68 rows x 1 columns]
+-------------------------------
+total no. of years =  68
+-----------------------------
+
+       Location  Period                               Indicator First Tooltip
+1   Afghanistan  2015.0  Number of reported deaths from cholera             8
+2   Afghanistan  2014.0  Number of reported deaths from cholera             4
+3   Afghanistan  2013.0  Number of reported deaths from cholera            14
+4   Afghanistan  2012.0  Number of reported deaths from cholera             0
+5   Afghanistan  2011.0  Number of reported deaths from cholera            44
+6   Afghanistan  2010.0  Number of reported deaths from cholera            10
+7   Afghanistan  2009.0  Number of reported deaths from cholera            11
+8   Afghanistan  2008.0  Number of reported deaths from cholera            22
+9   Afghanistan  2005.0  Number of reported deaths from cholera             0
+10  Afghanistan  2003.0  Number of reported deaths from cholera             7
+11  Afghanistan  2001.0  Number of reported deaths from cholera           114
+12  Afghanistan  2000.0  Number of reported deaths from cholera           198
+13  Afghanistan  1999.0  Number of reported deaths from cholera           152
+14  Afghanistan  1998.0  Number of reported deaths from cholera             0
+15  Afghanistan  1997.0  Number of reported deaths from cholera           125
+16  Afghanistan  1995.0  Number of reported deaths from cholera           624
+17  Afghanistan  1994.0  Number of reported deaths from cholera           118
+18  Afghanistan  1993.0  Number of reported deaths from cholera           931
+19  Afghanistan  1965.0  Number of reported deaths from cholera            55
+20  Afghanistan  1960.0  Number of reported deaths from cholera           199
+   Location  Period                               Indicator First Tooltip
+23  Algeria  2005.0  Number of reported deaths from cholera             0
+24  Algeria  1994.0  Number of reported deaths from cholera             4
+25  Algeria  1992.0  Number of reported deaths from cholera             0
+26  Algeria  1990.0  Number of reported deaths from cholera            20
+27  Algeria  1989.0  Number of reported deaths from cholera             0
+28  Algeria  1988.0  Number of reported deaths from cholera            30
+29  Algeria  1987.0  Number of reported deaths from cholera             0
+30  Algeria  1984.0  Number of reported deaths from cholera             0
+31  Algeria  1983.0  Number of reported deaths from cholera             9
+32  Algeria  1980.0  Number of reported deaths from cholera            18
+33  Algeria  1979.0  Number of reported deaths from cholera            94
+34  Algeria  1978.0  Number of reported deaths from cholera            13
+35  Algeria  1977.0  Number of reported deaths from cholera             9
+36  Algeria  1976.0  Number of reported deaths from cholera            30
+37  Algeria  1975.0  Number of reported deaths from cholera           118
+38  Algeria  1974.0  Number of reported deaths from cholera            50
+39  Algeria  1973.0  Number of reported deaths from cholera            74
+40  Algeria  1972.0  Number of reported deaths from cholera            71
+41  Algeria  1971.0  Number of reported deaths from cholera           110
+     Location  Period                               Indicator First Tooltip
+69  Argentina  1997.0  Number of reported deaths from cholera            12
+70  Argentina  1996.0  Number of reported deaths from cholera             5
+71  Argentina  1995.0  Number of reported deaths from cholera             1
+72  Argentina  1994.0  Number of reported deaths from cholera            15
+73  Argentina  1993.0  Number of reported deaths from cholera            34
+74  Argentina  1992.0  Number of reported deaths from cholera            15
+Empty DataFrame
+Columns: [Location, Period, Indicator, First Tooltip]
+Index: []
+       Location  Period                               Indicator First Tooltip
+123  Bangladesh  1999.0  Number of reported deaths from cholera            63
+124  Bangladesh  1998.0  Number of reported deaths from cholera            26
+125  Bangladesh  1997.0  Number of reported deaths from cholera            95
+126  Bangladesh  1996.0  Number of reported deaths from cholera             0
+127  Bangladesh  1995.0  Number of reported deaths from cholera            61
+128  Bangladesh  1994.0  Number of reported deaths from cholera            41
+129  Bangladesh  1993.0  Number of reported deaths from cholera             0
+130  Bangladesh  1992.0  Number of reported deaths from cholera            29
+131  Bangladesh  1991.0  Number of reported deaths from cholera             0
+132  Bangladesh  1990.0  Number of reported deaths from cholera             4
+133  Bangladesh  1989.0  Number of reported deaths from cholera             2
+134  Bangladesh  1988.0  Number of reported deaths from cholera            43
+135  Bangladesh  1987.0  Number of reported deaths from cholera            23
+136  Bangladesh  1979.0  Number of reported deaths from cholera            21
+137  Bangladesh  1978.0  Number of reported deaths from cholera            81
+138  Bangladesh  1977.0  Number of reported deaths from cholera           354
+139  Bangladesh  1976.0  Number of reported deaths from cholera            62
+140  Bangladesh  1975.0  Number of reported deaths from cholera           117
+141  Bangladesh  1974.0  Number of reported deaths from cholera           173
+142  Bangladesh  1973.0  Number of reported deaths from cholera           369
+143  Bangladesh  1972.0  Number of reported deaths from cholera           201
+144  Bangladesh  1971.0  Number of reported deaths from cholera           386
+145  Bangladesh  1970.0  Number of reported deaths from cholera          1889
+146  Bangladesh  1969.0  Number of reported deaths from cholera          1556
+147  Bangladesh  1968.0  Number of reported deaths from cholera           614
+148  Bangladesh  1967.0  Number of reported deaths from cholera           369
+149  Bangladesh  1966.0  Number of reported deaths from cholera          1234
+150  Bangladesh  1965.0  Number of reported deaths from cholera           683
+151  Bangladesh  1964.0  Number of reported deaths from cholera          2419
+152  Bangladesh  1963.0  Number of reported deaths from cholera          1248
+153  Bangladesh  1962.0  Number of reported deaths from cholera          1304
+154  Bangladesh  1961.0  Number of reported deaths from cholera          1703
+155  Bangladesh  1960.0  Number of reported deaths from cholera          6272
+156  Bangladesh  1959.0  Number of reported deaths from cholera         11056
+157  Bangladesh  1958.0  Number of reported deaths from cholera         10119
+158  Bangladesh  1957.0  Number of reported deaths from cholera          5134
+159  Bangladesh  1956.0  Number of reported deaths from cholera         15310
+160  Bangladesh  1955.0  Number of reported deaths from cholera          9802
+161  Bangladesh  1954.0  Number of reported deaths from cholera          9443
+162  Bangladesh  1953.0  Number of reported deaths from cholera         16904
+163  Bangladesh  1952.0  Number of reported deaths from cholera         12884
+164  Bangladesh  1951.0  Number of reported deaths from cholera         12372
+165  Bangladesh  1950.0  Number of reported deaths from cholera         12947
+                     Location  Period                               Indicator  \
+421  Central African Republic  2011.0  Number of reported deaths from cholera   
+422  Central African Republic  2006.0  Number of reported deaths from cholera   
+423  Central African Republic  2005.0  Number of reported deaths from cholera   
+424  Central African Republic  2004.0  Number of reported deaths from cholera   
+425  Central African Republic  1998.0  Number of reported deaths from cholera   
+426  Central African Republic  1997.0  Number of reported deaths from cholera   
+
+    First Tooltip  
+421            15  
+422             0  
+423             0  
+424            48  
+425             3  
+426            75  
+    Location  Period                               Indicator First Tooltip
+428     Chad  2010.0  Number of reported deaths from cholera           175
+429     Chad  2009.0  Number of reported deaths from cholera             6
+430     Chad  2007.0  Number of reported deaths from cholera             0
+431     Chad  2006.0  Number of reported deaths from cholera            71
+432     Chad  2005.0  Number of reported deaths from cholera            14
+433     Chad  2004.0  Number of reported deaths from cholera           272
+434     Chad  2003.0  Number of reported deaths from cholera             7
+435     Chad  2001.0  Number of reported deaths from cholera           226
+436     Chad  1999.0  Number of reported deaths from cholera            18
+437     Chad  1998.0  Number of reported deaths from cholera           144
+438     Chad  1997.0  Number of reported deaths from cholera           443
+439     Chad  1996.0  Number of reported deaths from cholera           448
+440     Chad  1994.0  Number of reported deaths from cholera            43
+441     Chad  1991.0  Number of reported deaths from cholera          1344
+442     Chad  1974.0  Number of reported deaths from cholera            87
+443     Chad  1972.0  Number of reported deaths from cholera             3
+444     Chad  1971.0  Number of reported deaths from cholera          2411
+    Location  Period                               Indicator First Tooltip
+456    China  2015.0  Number of reported deaths from cholera             0
+457    China  2014.0  Number of reported deaths from cholera             0
+458    China  2013.0  Number of reported deaths from cholera             1
+459    China  2012.0  Number of reported deaths from cholera             0
+460    China  2010.0  Number of reported deaths from cholera             0
+461    China  2009.0  Number of reported deaths from cholera             0
+462    China  2008.0  Number of reported deaths from cholera             0
+463    China  2007.0  Number of reported deaths from cholera             0
+464    China  2006.0  Number of reported deaths from cholera             2
+465    China  2005.0  Number of reported deaths from cholera             4
+466    China  2004.0  Number of reported deaths from cholera             1
+467    China  2003.0  Number of reported deaths from cholera             1
+468    China  2001.0  Number of reported deaths from cholera             0
+469    China  2000.0  Number of reported deaths from cholera             3
+470    China  1999.0  Number of reported deaths from cholera             0
+471    China  1998.0  Number of reported deaths from cholera             0
+472    China  1997.0  Number of reported deaths from cholera            29
+473    China  1996.0  Number of reported deaths from cholera             4
+474    China  1995.0  Number of reported deaths from cholera            88
+475    China  1994.0  Number of reported deaths from cholera           319
+476    China  1993.0  Number of reported deaths from cholera            94
+477    China  1992.0  Number of reported deaths from cholera             1
+478    China  1991.0  Number of reported deaths from cholera             0
+479    China  1990.0  Number of reported deaths from cholera             5
+480    China  1989.0  Number of reported deaths from cholera            59
+481    China  1988.0  Number of reported deaths from cholera            89
+482    China  1987.0  Number of reported deaths from cholera             0
+483    China  1980.0  Number of reported deaths from cholera             0
+484    China  1979.0  Number of reported deaths from cholera             2
+485    China  1967.0  Number of reported deaths from cholera             0
+486    China  1963.0  Number of reported deaths from cholera             0
+487    China  1962.0  Number of reported deaths from cholera            24
+488    China  1949.0  Number of reported deaths from cholera             1
+    Location  Period                               Indicator First Tooltip
+881    India  2015.0  Number of reported deaths from cholera             4
+882    India  2014.0  Number of reported deaths from cholera            21
+883    India  2013.0  Number of reported deaths from cholera            54
+884    India  2010.0  Number of reported deaths from cholera             9
+885    India  2008.0  Number of reported deaths from cholera             1
+886    India  2007.0  Number of reported deaths from cholera             3
+887    India  2006.0  Number of reported deaths from cholera             3
+888    India  2005.0  Number of reported deaths from cholera             6
+889    India  2004.0  Number of reported deaths from cholera             7
+890    India  2003.0  Number of reported deaths from cholera             2
+891    India  2002.0  Number of reported deaths from cholera            10
+892    India  2001.0  Number of reported deaths from cholera             6
+893    India  2000.0  Number of reported deaths from cholera            20
+894    India  1999.0  Number of reported deaths from cholera             6
+895    India  1998.0  Number of reported deaths from cholera            11
+896    India  1997.0  Number of reported deaths from cholera            16
+897    India  1996.0  Number of reported deaths from cholera            34
+898    India  1995.0  Number of reported deaths from cholera             5
+899    India  1994.0  Number of reported deaths from cholera            32
+900    India  1993.0  Number of reported deaths from cholera            51
+901    India  1992.0  Number of reported deaths from cholera            55
+902    India  1991.0  Number of reported deaths from cholera           149
+903    India  1990.0  Number of reported deaths from cholera            83
+904    India  1989.0  Number of reported deaths from cholera            93
+905    India  1988.0  Number of reported deaths from cholera           380
+906    India  1987.0  Number of reported deaths from cholera           240
+907    India  1986.0  Number of reported deaths from cholera            70
+908    India  1985.0  Number of reported deaths from cholera           155
+909    India  1984.0  Number of reported deaths from cholera            27
+910    India  1983.0  Number of reported deaths from cholera           309
+911    India  1982.0  Number of reported deaths from cholera           213
+912    India  1981.0  Number of reported deaths from cholera           150
+913    India  1980.0  Number of reported deaths from cholera           307
+914    India  1979.0  Number of reported deaths from cholera           113
+915    India  1978.0  Number of reported deaths from cholera           246
+916    India  1977.0  Number of reported deaths from cholera           289
+917    India  1976.0  Number of reported deaths from cholera           662
+918    India  1975.0  Number of reported deaths from cholera          2330
+      Location  Period                               Indicator First Tooltip
+941  Indonesia  2005.0  Number of reported deaths from cholera            19
+942  Indonesia  2001.0  Number of reported deaths from cholera             6
+943  Indonesia  1997.0  Number of reported deaths from cholera             0
+944  Indonesia  1996.0  Number of reported deaths from cholera             0
+945  Indonesia  1994.0  Number of reported deaths from cholera             0
+946  Indonesia  1993.0  Number of reported deaths from cholera            25
+947  Indonesia  1992.0  Number of reported deaths from cholera             0
+948  Indonesia  1991.0  Number of reported deaths from cholera            55
+949  Indonesia  1990.0  Number of reported deaths from cholera             0
+950  Indonesia  1989.0  Number of reported deaths from cholera             0
+951  Indonesia  1988.0  Number of reported deaths from cholera             0
+952  Indonesia  1987.0  Number of reported deaths from cholera            18
+953  Indonesia  1986.0  Number of reported deaths from cholera           391
+954  Indonesia  1985.0  Number of reported deaths from cholera            85
+955  Indonesia  1984.0  Number of reported deaths from cholera            59
+956  Indonesia  1983.0  Number of reported deaths from cholera           346
+957  Indonesia  1982.0  Number of reported deaths from cholera           535
+958  Indonesia  1981.0  Number of reported deaths from cholera           463
+959  Indonesia  1980.0  Number of reported deaths from cholera           150
+960  Indonesia  1979.0  Number of reported deaths from cholera           769
+961  Indonesia  1978.0  Number of reported deaths from cholera           507
+962  Indonesia  1977.0  Number of reported deaths from cholera           780
+963  Indonesia  1976.0  Number of reported deaths from cholera          2665
+964  Indonesia  1975.0  Number of reported deaths from cholera          3715
+965  Indonesia  1974.0  Number of reported deaths from cholera          3920
+966  Indonesia  1973.0  Number of reported deaths from cholera          3058
+967  Indonesia  1972.0  Number of reported deaths from cholera          6956
+968  Indonesia  1971.0  Number of reported deaths from cholera          3607
+969  Indonesia  1970.0  Number of reported deaths from cholera          1257
+970  Indonesia  1969.0  Number of reported deaths from cholera           262
+971  Indonesia  1968.0  Number of reported deaths from cholera            22
+972  Indonesia  1967.0  Number of reported deaths from cholera           139
+973  Indonesia  1966.0  Number of reported deaths from cholera            36
+974  Indonesia  1964.0  Number of reported deaths from cholera            69
+975  Indonesia  1963.0  Number of reported deaths from cholera            83
+976  Indonesia  1962.0  Number of reported deaths from cholera            80
+977  Indonesia  1961.0  Number of reported deaths from cholera           474
+978  Indonesia  1960.0  Number of reported deaths from cholera            22
+      Location  Period                               Indicator First Tooltip
+2045  Thailand  2015.0  Number of reported deaths from cholera             1
+2046  Thailand  2014.0  Number of reported deaths from cholera             0
+2047  Thailand  2013.0  Number of reported deaths from cholera             0
+2048  Thailand  2012.0  Number of reported deaths from cholera             0
+2049  Thailand  2011.0  Number of reported deaths from cholera             4
+2050  Thailand  2010.0  Number of reported deaths from cholera            15
+2051  Thailand  2009.0  Number of reported deaths from cholera             2
+2052  Thailand  2008.0  Number of reported deaths from cholera             3
+2053  Thailand  2007.0  Number of reported deaths from cholera             7
+2054  Thailand  2006.0  Number of reported deaths from cholera             0
+2055  Thailand  1994.0  Number of reported deaths from cholera             5
+2056  Thailand  1988.0  Number of reported deaths from cholera            41
+2057  Thailand  1987.0  Number of reported deaths from cholera            36
+2058  Thailand  1986.0  Number of reported deaths from cholera             1
+2059  Thailand  1985.0  Number of reported deaths from cholera            14
+2060  Thailand  1984.0  Number of reported deaths from cholera            19
+2061  Thailand  1983.0  Number of reported deaths from cholera            41
+2062  Thailand  1982.0  Number of reported deaths from cholera            16
+2063  Thailand  1981.0  Number of reported deaths from cholera             2
+2064  Thailand  1980.0  Number of reported deaths from cholera            85
+2065  Thailand  1979.0  Number of reported deaths from cholera            44
+2066  Thailand  1978.0  Number of reported deaths from cholera           123
+2067  Thailand  1977.0  Number of reported deaths from cholera             5
+2068  Thailand  1976.0  Number of reported deaths from cholera             0
+2069  Thailand  1975.0  Number of reported deaths from cholera            88
+2070  Thailand  1974.0  Number of reported deaths from cholera            64
+2071  Thailand  1973.0  Number of reported deaths from cholera            33
+2072  Thailand  1969.0  Number of reported deaths from cholera            40
+2073  Thailand  1968.0  Number of reported deaths from cholera            21
+2074  Thailand  1967.0  Number of reported deaths from cholera             6
+2075  Thailand  1966.0  Number of reported deaths from cholera            21
+2076  Thailand  1965.0  Number of reported deaths from cholera             4
+2077  Thailand  1964.0  Number of reported deaths from cholera            30
+2078  Thailand  1963.0  Number of reported deaths from cholera           156
+2079  Thailand  1959.0  Number of reported deaths from cholera           613
+2080  Thailand  1958.0  Number of reported deaths from cholera          1426
+2081  Thailand  1951.0  Number of reported deaths from cholera             0
+2082  Thailand  1949.0  Number of reported deaths from cholera             2
+Empty DataFrame
+Columns: [Location, Period, Indicator, First Tooltip]
+Index: []
