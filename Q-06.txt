@@ -1,0 +1,22 @@
+ln [16]: # Question - 06 : Central African Republic
+
+Central_African_Republic = df[df.Location == 'Central African Republic']
+print(Central_African_Republic[1:])
+
+============================================================================================
+
+                     Location  Period                               Indicator  \
+421  Central African Republic  2011.0  Number of reported deaths from cholera   
+422  Central African Republic  2006.0  Number of reported deaths from cholera   
+423  Central African Republic  2005.0  Number of reported deaths from cholera   
+424  Central African Republic  2004.0  Number of reported deaths from cholera   
+425  Central African Republic  1998.0  Number of reported deaths from cholera   
+426  Central African Republic  1997.0  Number of reported deaths from cholera   
+
+    First Tooltip  
+421            15  
+422             0  
+423             0  
+424            48  
+425             3  
+426            75  
