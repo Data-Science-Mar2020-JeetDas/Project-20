@@ -1,0 +1,52 @@
+
+# Question - 05 : Bangladesh
+
+Bangladesh = df[df.Location == 'Bangladesh']
+print(Bangladesh[1:])
+
+============================================================================================
+
+       Location  Period                               Indicator First Tooltip
+123  Bangladesh  1999.0  Number of reported deaths from cholera            63
+124  Bangladesh  1998.0  Number of reported deaths from cholera            26
+125  Bangladesh  1997.0  Number of reported deaths from cholera            95
+126  Bangladesh  1996.0  Number of reported deaths from cholera             0
+127  Bangladesh  1995.0  Number of reported deaths from cholera            61
+128  Bangladesh  1994.0  Number of reported deaths from cholera            41
+129  Bangladesh  1993.0  Number of reported deaths from cholera             0
+130  Bangladesh  1992.0  Number of reported deaths from cholera            29
+131  Bangladesh  1991.0  Number of reported deaths from cholera             0
+132  Bangladesh  1990.0  Number of reported deaths from cholera             4
+133  Bangladesh  1989.0  Number of reported deaths from cholera             2
+134  Bangladesh  1988.0  Number of reported deaths from cholera            43
+135  Bangladesh  1987.0  Number of reported deaths from cholera            23
+136  Bangladesh  1979.0  Number of reported deaths from cholera            21
+137  Bangladesh  1978.0  Number of reported deaths from cholera            81
+138  Bangladesh  1977.0  Number of reported deaths from cholera           354
+139  Bangladesh  1976.0  Number of reported deaths from cholera            62
+140  Bangladesh  1975.0  Number of reported deaths from cholera           117
+141  Bangladesh  1974.0  Number of reported deaths from cholera           173
+142  Bangladesh  1973.0  Number of reported deaths from cholera           369
+143  Bangladesh  1972.0  Number of reported deaths from cholera           201
+144  Bangladesh  1971.0  Number of reported deaths from cholera           386
+145  Bangladesh  1970.0  Number of reported deaths from cholera          1889
+146  Bangladesh  1969.0  Number of reported deaths from cholera          1556
+147  Bangladesh  1968.0  Number of reported deaths from cholera           614
+148  Bangladesh  1967.0  Number of reported deaths from cholera           369
+149  Bangladesh  1966.0  Number of reported deaths from cholera          1234
+150  Bangladesh  1965.0  Number of reported deaths from cholera           683
+151  Bangladesh  1964.0  Number of reported deaths from cholera          2419
+152  Bangladesh  1963.0  Number of reported deaths from cholera          1248
+153  Bangladesh  1962.0  Number of reported deaths from cholera          1304
+154  Bangladesh  1961.0  Number of reported deaths from cholera          1703
+155  Bangladesh  1960.0  Number of reported deaths from cholera          6272
+156  Bangladesh  1959.0  Number of reported deaths from cholera         11056
+157  Bangladesh  1958.0  Number of reported deaths from cholera         10119
+158  Bangladesh  1957.0  Number of reported deaths from cholera          5134
+159  Bangladesh  1956.0  Number of reported deaths from cholera         15310
+160  Bangladesh  1955.0  Number of reported deaths from cholera          9802
+161  Bangladesh  1954.0  Number of reported deaths from cholera          9443
+162  Bangladesh  1953.0  Number of reported deaths from cholera         16904
+163  Bangladesh  1952.0  Number of reported deaths from cholera         12884
+164  Bangladesh  1951.0  Number of reported deaths from cholera         12372
+165  Bangladesh  1950.0  Number of reported deaths from cholera         12947
