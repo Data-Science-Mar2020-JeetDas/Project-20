@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import pandas
+
+
+df = pd.read_csv("C:/Users/Jeet Das/Desktop/cholera-data.csv",encoding="utf-8")
+
+print("\n----------------------- output data :---------------------\n")
+print("Project-20 : Country wise Number of reported deaths from cholera");
+print("\n------------------------------------------------------------\n")
+
+
+# Question – A : get row and column numbers 
+
+print('---------------------------------------------')
+print("Dimension of the data frame = ",df.shape)
+print('---------------------------------------------')
+
+
+----------------------- output data :---------------------
+
+Project-20 : Country wise Number of reported deaths from cholera
+
+------------------------------------------------------------
+
+---------------------------------------------
+Dimension of the data frame =  (2376, 4)
+---------------------------------------------
